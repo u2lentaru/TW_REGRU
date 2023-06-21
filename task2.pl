@@ -11,9 +11,6 @@ use Cat;
   
 my $cat = new Cat; 
 $cat->method2(); 
-
-# $cat->Animal::method2();
-
 1;
 
 # This is Cat class Method 2
