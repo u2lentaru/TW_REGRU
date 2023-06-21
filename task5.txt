@@ -1,0 +1,5 @@
+---
+chmod -R 777 /var/logs/archive 
+gunzip /var/logs/archive/backup.tar.gz
+rm /var/logs/archive/*.tmp
+fgrep -l "user deleted" /var/logs/archive/*
