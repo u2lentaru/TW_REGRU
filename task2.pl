@@ -6,11 +6,11 @@ use warnings;
 package main;
 
 use lib "lib";
-use Animal;
 use Cat;
   
 my $cat = new Cat; 
 $cat->method2(); 
+
 1;
 
 # This is Cat class Method 2
