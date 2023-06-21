@@ -14,12 +14,15 @@ while($flag)
             {
                 @arr[$i, $i+1]=@arr[$i+1, $i];
                 $flag=1;
-                last;
+                # last;
             }
         }
     }
 
-my ($low, $mid, $found_key, $num, $key, $index, $high) = (0, 0, 0, 0, 0, 0, $#arr);
+    print @arr, "\n";
+
+# my ($low, $mid, $found_key, $num, $key, $index, $high) = (0, 0, 0, 0, 0, 0, $#arr);
+my ($low, $mid, $found_key, $key, $high) = (0, 0, 0, 0, $#arr);
 
 print "Enter # : ";
 chomp( $key = <STDIN> );
@@ -28,7 +31,7 @@ while( ( $low <= $high ) && !$found_key ) {
   $mid = int(( $low + $high ) / 2);
   if( $key == $arr[$mid] ) {
     $found_key = 1;
-    $index = int( $mid );
+    # $index = int( $mid );
   }
 
   elsif( $key < $arr[$mid] ) {
